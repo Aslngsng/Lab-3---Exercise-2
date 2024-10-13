@@ -7,3 +7,18 @@
 #create a new_list
 
 #print the output
+
+list_1 = list(map(int, input("Enter list of numbers: ").split()))
+
+list_2 = input("Enter list of names: ").split()
+
+new_list = [(i, j) for i, j in zip(list_1, list_2)]
+
+print(new_list)
+
+#input
+#list_1 = [1,2,3,4,5]
+#list_2 = [april,mae,lopez,salangsang,cute]
+
+#output
+#[(1, 'april'), (2, 'mae'), (3, 'lopez'), (4, 'salangsang'), (5, 'cute')]
